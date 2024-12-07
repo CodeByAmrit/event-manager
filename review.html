@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review - Event Extravaganza</title>
+    <link rel="icon" href="img/LOGO.ico" type="image/icon type">
+    <link rel="stylesheet" href="review.css">
+    <!-- Ionicons CDN for social media icons -->
+    <link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.4/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Full-screen background video -->
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="img/bgvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Content Wrapper for the page -->
+    <div class="content-wrapper">
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <h1>Leave a Review</h1>
+                <p>Your feedback helps us create even better events!</p>
+            </div>
+        </header>
+
+        <!-- Review Form Section -->
+        <div class="review-section">
+            <form class="review-form" action="submit_review.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="rating">Rating</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select a Rating</option>
+                    <option value="5">5 ★★★★★</option>
+                    <option value="4">4 ★★★★</option>
+                    <option value="3">3 ★★★</option>
+                    <option value="2">2 ★★</option>
+                    <option value="1">1 ★</option>
+                </select>
+
+                <label for="review">Your Review</label>
+                <textarea id="review" name="review" placeholder="Write your review" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <p>Follow us on Social Media:</p>
+            <a href="https://www.gmail.com" target="_blank" class="social-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Event Extravaganza. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
