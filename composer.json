@@ -1,0 +1,23 @@
+{
+    "name": "amrit/event-manager",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Amrit\\EventManager\\": "src/"
+        }
+    },
+    
+    "authors": [
+        {
+            "name": "Amrit",
+            "email": "35948782+CodeByAmrit@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "doctrine/dbal": "^4.2",
+        "vlucas/phpdotenv": "^5.6"
+    }
+
+    
+}
